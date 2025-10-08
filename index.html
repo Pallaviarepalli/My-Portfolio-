@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pallavi Arepalli Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay loop muted playsinline id="background-video">
+    <source src="background.mp4" type="video/mp4">
+  </video>
+
+  <!-- Header -->
+  <header id="header">
+    <nav class="nav-container">
+      <img src="logo" class="logo" alt="Logo">
+      <ul id="sidemenu">
+        <i class="fas fa-times" id="close-menu"></i>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#portfolio">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="fas fa-bars" id="open-menu"></i>
+    </nav>
+
+    <div class="header-text">
+      <p>WELCOME to My Portfolio</p>
+      <h1>Hi, I'm <span>Pallavi Arepalli</span><br>
+        <span class="small-text">A Passionate Developer | Problem Solver</span>
+      </h1>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-col-1">
+        <p align="left">
+            <img src="coding.gif">
+        </p>
+      </div>
+      <div class="about-col-2">
+        <h2 class="sub-title">About Me</h2>
+        <p>I'm Pallavi Arepalli, a Computer Science student specializing in AI & ML. Passionate about Python programming, solving problems with intelligent systems, and building futuristic tech solutions.</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('Certifications')">Certifications</p>
+          <p class="tab-links" onclick="opentab('Education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="Certifications">
+          <ul>
+            <li><span>Salesforce</span> - Salesforce Certified AI Associate</li>
+            <li><span>Hackerrank</span> - Python Basics</li>
+            <li><span>Hackerrank</span> - SQL Basics</li>
+            <li><span>Google</span> - Crash Course on Python</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Education">
+          <ul>
+            <li><span>2026</span> - B.Tech in CSE (AI & ML) - Pragati Engineering College, Kakinada</li>
+            <li><span>2022</span> - Intermediate - Narayana Junior College, Vijayawada</li>
+            <li><span>2020</span> - 10th Board - Bhashyam High School, Vijayawada</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="sub-title">Projects</h2>
+    <div class="projects-list">
+      <div class="project-card">
+        <i class="fas fa-gamepad"></i>
+        <h3>Tic-Tac-Toe</h3>
+        <p>A Python Tkinter game with automatic win/draw detection and restart option.</p>
+        <a href="https://github.com/Pallaviarepalli/TIC-TAC-TOE-GAME.git" target="_blank">View here</a>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-shopping-basket"></i>
+        <h3>Mini-Boutique</h3>
+        <p>A small project showcasing HTML & CSS web development skills.</p>
+        <a href="https://github.com/Pallaviarepalli/Mini-Boutique-.git" target="_blank">View here</a>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-hand-paper"></i>
+        <h3>Gesture Play: Hands-Free-RPS</h3>
+        <p>Rock-Paper-Scissors game controlled entirely using hand gestures via webcam.</p>
+        <a href="https://github.com/Pallaviarepalli/RockPaperScissors-Gesture.git" target="_blank">View here</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="portfolio">
+    <h2 class="sub-title">My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <h3>Programming</h3>
+        <p>Python</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Web Development</h3>
+        <p>HTML, CSS</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-robot"></i>
+        <h3>AI Frameworks</h3>
+        <p>OpenCV, MediaPipe</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-tools"></i>
+        <h3>Development Tools</h3>
+        <p> Python, VS Code, Git</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h3>Databases</h3>
+        <p>SQL</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="sub-title">Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> pallavia005@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 9493122879</p>
+        <a href="https://drive.google.com/file/d/10WmCAoY6JwVXn69dDzPkQEUQaQ6rf1P2/view?usp=drive_link" download class="btn">Download Resume</a>
+      </div>
+      <form action="https://formsubmit.co/pallavia005@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Thank you for contacting me!">
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/pallavi-arepalli-4a4883259/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Pallaviarepalli" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://leetcode.com/u/pallaviarepalli/" target="_blank"><i class="fas fa-code"></i></a>
+      <a href="https://www.hackerrank.com/profile/pallavia005" target="_blank"><i class="fab fa-hackerrank"></i></a>
+    </div>
+    <p>Thank you for visiting my portfolio!</p>
+  </footer>
+
+  <script>
+    function openmenu() { document.getElementById("sidemenu").style.right = "0"; }
+    function closemenu() { document.getElementById("sidemenu").style.right = "-250px"; }
+    document.getElementById("open-menu").addEventListener("click", openmenu);
+    document.getElementById("close-menu").addEventListener("click", closemenu);
+
+    function opentab(tabname){
+      document.querySelectorAll(".tab-links").forEach(link=>link.classList.remove("active-link"));
+      document.querySelectorAll(".tab-contents").forEach(content=>content.classList.remove("active-tab"));
+      document.getElementById(tabname).classList.add("active-tab");
+      document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
+    }
+  </script>
+</body>
+</html>
